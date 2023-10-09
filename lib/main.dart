@@ -1,22 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/app_widget.dart';
 
 void main(List<String> args) {
   runApp(
-    const AppWidget(title: 'Xaminhaneném'),
+    const AppWidget(),
   );
-}
-
-class AppWidget extends StatelessWidget {
-  final String title;
-
-  const AppWidget({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(title,
-          textDirection: TextDirection.ltr,
-          style: const TextStyle(color: Colors.white, fontSize: 40.0)),
-    );
-  }
 }
